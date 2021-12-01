@@ -12,6 +12,66 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>Coffee-Blog Template</h1>
+      <section id="before-sign-in">
+        <!-- Sign up form goes here! -->
+        <form id="sign-up" class="border">
+          <!-- to group multiple inputs together in our form -->
+          <fieldset>
+            <legend>Sign Up</legend>
+            <label for="em">Email:</label>
+            <input type="email" name="credentials[email]" id="em" placeholder="Enter Email" required>
+            <label for="ps">Password:</label>
+            <input type="password" name="credentials[password]" id="ps" placeholder="Enter Password" required>
+            <label for="psc">Password Confirmation:</label>
+            <input type="password" name="credentials[password_confirmation]" id="psc" placeholder="Enter Password Confirmation" required>
+            <button class="btn btn-success">Sign-Up</button>
+          </fieldset>
+        </form>
+      
+      <!-- Sign In -->
+      
+        <form id="sign-in" class="border">
+          <fieldset>
+            <legend>Sign In</legend>
+            <label for="email">Email:</label>
+            <input type="email" name="credentials[email]" id="email" placeholder="Enter Email" required>
+            <label for="password">Password:</label>
+            <input type="password" name="credentials[password]" id="password" placeholder="Enter Password" required>
+            <button class="btn btn-primary">Sign-In</button>
+          </fieldset>
+        </form>
+      </section>
+
+
+<!-- we only want this to be visible after you sign in -->
+<!-- by default it should not be displayed -->
+      <section id="after-sign-in">
+        <!-- change password and sign out forms  -->
+        <form id="change-password" class="border">
+          <fieldset>
+            <legend>Change Password</legend>
+            <label for="old">Old Password:</label>
+            <input type="password" name="passwords[old]" id="old" placeholder="Enter Old Password" required>
+            <label for="new">New Password:</label>
+            <input type="password" name="passwords[new]" id="new" placeholder="Enter New Password" required>
+            <button class="btn btn-primary">Change Password</button>
+          </fieldset>
+          </form>
+
+        <form id="sign-out" class="border">
+          <fieldset>
+            <legend>Sign Out</legend>
+            <button class="btn btn-primary">Sign Out</button>
+          </fieldset>
+          </form>
+      </section>
+
+        <!-- create a section for your user feedback -->
+      <section>
+        <div id="error-message"></div>
+
+        <div id="movies-display"></div>
+      </section>
     </body>
 </html>
