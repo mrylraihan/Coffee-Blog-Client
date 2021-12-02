@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Coffee-Blog</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -13,35 +13,59 @@
     </head>
     <body>
       <h1>Coffee-Blog Template</h1>
-      <section id="before-sign-in">
-        <!-- Sign up form goes here! -->
-        <form id="sign-up" class="border">
-          <!-- to group multiple inputs together in our form -->
-          <fieldset>
-            <legend>Sign Up</legend>
-            <label for="em">Email:</label>
-            <input type="email" name="credentials[email]" id="em" placeholder="Enter Email" required>
-            <label for="ps">Password:</label>
-            <input type="password" name="credentials[password]" id="ps" placeholder="Enter Password" required>
-            <label for="psc">Password Confirmation:</label>
-            <input type="password" name="credentials[password_confirmation]" id="psc" placeholder="Enter Password Confirmation" required>
-            <button class="btn btn-success">Sign-Up</button>
-          </fieldset>
-        </form>
-      
-      <!-- Sign In -->
-      
-        <form id="sign-in" class="border">
-          <fieldset>
-            <legend>Sign In</legend>
-            <label for="email">Email:</label>
-            <input type="email" name="credentials[email]" id="email" placeholder="Enter Email" required>
-            <label for="password">Password:</label>
-            <input type="password" name="credentials[password]" id="password" placeholder="Enter Password" required>
-            <button class="btn btn-primary">Sign-In</button>
-          </fieldset>
-        </form>
-      </section>
+
+       <section id="before-sign-in">
+
+
+        <div id="card">
+            <div id="card-content">
+                <div id="card-title">
+                    <h3>LOGIN/SIGN-UP</h3>
+                    <div class="underline-title"></div>
+                </div>
+                <!-- Sign up form goes here! -->
+                <form id="sign-up" class="form">
+                    <!-- to group multiple inputs together in our form -->
+                    <fieldset>
+                        <label for="em" style="padding-top:13px">Your Email</label>
+                        <input type="email" class="form-content" name="credentials[email]" id="em" required>
+                         <div class="form-border"></div>
+
+                         
+                         <label for="ps" style="padding-top:13px">&nbsp;Password</label>
+                         <input type="password"  class="form-content" name="credentials[password]" id="ps" required>
+                         <div class="form-border"></div>
+                         
+                         <label for="psc" style="padding-top:13px">Password Confirmation</label>
+                         <input type="password"  class="form-content" name="credentials[password_confirmation]" id="psc" required>
+                         <div class="form-border"></div>
+
+
+                        <button class="submit-btn">Sign-Up</button>
+                    </fieldset>
+                </form>
+                
+                <!-- Sign In -->
+                
+                <form id="sign-in" class="form">
+                    <fieldset>
+                         <label for="email" style="padding-top:13px">User Email</label>
+                        <input type="email" class="form-content" name="credentials[email]" id="email" required>
+                         <div class="form-border"></div>
+
+
+                         <label for="password" style="padding-top:13px">User Password</label>
+                        <input type="password" class="form-content" name="credentials[password]" id="password" required>
+                         <div class="form-border"></div>
+                        <button class="submit-btn">Sign-In</button>
+                    </fieldset>
+                </form>
+            </div>
+            </div>
+            
+            
+        </section>
+     
 
 
 <!-- we only want this to be visible after you sign in -->
@@ -65,49 +89,50 @@
             <button class="btn btn-primary">Sign Out</button>
           </fieldset>
           </form>
-      </section>
-
-        <!-- create a section for your user feedback -->
-        <!-- cafes section -->
-        <section>
+          
+          <!-- create a section for your user feedback -->
+          <!-- cafes section -->
+          <section>
             <h2>Create One Cafe</h2>
-          <form id="cafes-create" action="">
-            <input type="text" name="cafe[name]" placeholder="Enter Cafe Name">
-            <input type="text" name="cafe[address]" placeholder="Enter Address">
-            <input type="text" name="cafe[hours]" placeholder="Enter hours">
-            <button>Create Cafe</button>
-          </form>
-          <hr>
-
-          <h2>Delete Book</h2>
-          <form id="delete-cafe" action="">
-            <input type="text" name="cafe[id]" placeholder="Enter Cafe Id">
-            <!-- this button will submit the form, since it is inside a form it has teh submit by default, which mean s if the button is clicked the form is submitted -->
-            <button>Delete Book</button>
-          </form>
-          <hr>
-
-
-          <h2>Get All Cafes!</h2>
-          <button id="cafes-index">Get All Cafes</button>
-          <hr>
-
-          <h2>Get One Cafe by Id</h2>
-          <form id="cafes-show" action="">
-            <input type="text" name="cafe[id]" placeholder="Enter cafe Id">
-            <button>Get Single Cafe!</button>
-          </form>
-          <hr>
-
-
-
-
+            <form id="cafes-create" action="">
+              <input type="text" name="cafe[name]" placeholder="Enter Cafe Name">
+              <input type="text" name="cafe[address]" placeholder="Enter Address">
+              <input type="text" name="cafe[hours]" placeholder="Enter hours">
+              <button>Create Cafe</button>
+            </form>
+            <hr>
+            
+            <h2>Delete Cafe</h2>
+            <form id="delete-cafe" action="">
+              <input type="text" name="cafe[id]" placeholder="Enter Cafe Id">
+              <!-- this button will submit the form, since it is inside a form it has teh submit by default, which mean s if the button is clicked the form is submitted -->
+              <button>Delete Book</button>
+            </form>
+            <hr>
+            
+            
+            <h2>Get All Cafes!</h2>
+            <button id="cafes-index">Get All Cafes</button>
+            <hr>
+            
+            <h2>Get One Cafe by Id</h2>
+            <form id="cafes-show" action="">
+              <input type="text" name="cafe[id]" placeholder="Enter cafe Id">
+              <button>Get Single Cafe!</button>
+            </form>
+            <hr>
+            
+            
+            
+            
+          </section>
+          <section>
+            <div id="cafes-display"></div>
+          </section>
         </section>
-
-      <section>
-        <div id="error-message"></div>
-
-        <div id="cafes-display"></div>
+          
+          <section>
+            <div id="error-message"></div>
       </section>
     </body>
 </html>

@@ -1,1 +1,100 @@
 @import '~bootstrap/scss/bootstrap';
+
+body{
+	/* background: url(https://images.unsplash.com/photo-1541870730196-cd1efcbf5649?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80); */
+    background: -webkit-linear-gradient(bottom, #651104, #8d897b);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: center;
+	font-family: 'Lato', sans-serif;
+
+}
+h1{
+    justify-content: center;
+    align-items:center ;
+    display: flex;
+    align-content: center;
+}
+
+#after-sign-in{
+  display: none;
+}
+
+
+/* // new stuff for signin */
+
+label {
+  font-family: "Raleway", sans-serif;
+  font-size: 11pt;
+}
+
+#card {
+  background: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 620px;
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+}
+#card-content {
+  padding: 12px 44px;
+}
+#card-title {
+  font-family: "Raleway Thin", sans-serif;
+  letter-spacing: 4px;
+  padding-bottom: 23px;
+  padding-top: 13px;
+  text-align: center;
+}
+
+.submit-btn {
+  background: -webkit-linear-gradient(right, #9e9483, #0a0500);
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #80775a;
+  cursor: pointer;
+  color: white;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 42.3px;
+  margin: 0 auto;
+  display: block;
+    margin-top: 10px;
+  transition: 0.25s;
+  width: 153px;
+}
+#submit-btn:hover {
+  box-shadow: 0px 1px 18px #532c0c;
+}
+.form {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+.form-border {
+  background: -webkit-linear-gradient(right, #643b20, #837d79);
+  height: 1px;
+  width: 100%;
+}
+.form-content {
+  background: #fbfbfb;
+  border: none;
+  outline: none;
+  padding-top: 12px;
+}
+.underline-title {
+  background: -webkit-linear-gradient(right, #643b20, #98a09b);
+  height: 2px;
+  margin: -1.1rem auto 0 auto;
+  width: 230px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
