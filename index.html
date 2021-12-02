@@ -107,14 +107,42 @@
 
             <!-- Update One -->
             <button id="updateCBtn">Update a Cafe</button>
-            <h2>Update One Cafe</h2>
+            <!-- <h2>Update One Cafe</h2>
              <form id="cafes-update" action="">
               <input type="text" name="cafe[name]" placeholder="Enter Cafe Name">
               <input type="text" name="cafe[address]" placeholder="Enter Address">
               <input type="text" name="cafe[hours]" placeholder="Enter Cafe hours">
               <input type="text" name="cafe[id]" placeholder="Enter Id">
               <button>Update Cafe</button>
-            </form>
+            </form> -->
+
+            <!-- test -->
+            <div id="card-update">
+            <div id="card-content">
+                <div id="card-title">
+                    <h2>UPDATE A CAFE</h2>
+                    <div class="underline-title"></div>
+                </div>
+                 <form id="cafes-update" class="form" action="">
+                  <label for="cName" style="padding-top:13px">Cafe Name</label>
+                            <input type="text" class="form-content" name="cafe[name]" id="cName" required>
+                             <div class="form-border"></div>
+                  <label for="cAddress" style="padding-top:13px">Cafe Address</label>
+                            <input type="text" class="form-content" name="cafe[address]" id="cAddress" required>
+                             <div class="form-border"></div>
+                  <label for="cHour" style="padding-top:13px">Cafe Hours</label>
+                            <input type="text" class="form-content" name="cafe[hours]" id="cHour" required>
+                             <div class="form-border"></div>
+                  <label for="cId" style="padding-top:13px">Your Cafe Id</label>
+                            <input type="text" class="form-content" name="cafe[id]" id="cId" required>
+                             <div class="form-border"></div>
+                    <button class="submit-btn">Update Cafe</button>
+                </form>
+            </div>
+            </div>
+            <!-- test end  -->
+
+
             
             <h2>Delete Cafe</h2>
             <form id="delete-cafe" action="">

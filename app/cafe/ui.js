@@ -16,7 +16,7 @@ const onCreateCafeSuccess = responseData => {
 }
 
 const showUpdateCafe = () => {
-  $('#cafes-update').show()
+  $('#card-update').show()
 }
 
 const onUpdateCafeSuccess = () => {

@@ -27,10 +27,19 @@ h1{
   display: none;
 }
 
-#cafes-update{
+#card-update{
   display: none;
 }
 
+
+#card-update{
+  background: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 620px;
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+}
 
 /* // new stuff for signin */
 
