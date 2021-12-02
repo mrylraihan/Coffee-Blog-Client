@@ -2,6 +2,7 @@
 // var example = require('./example');
 
 import 'bootstrap'
+import '@fortawesome/fontawesome-free'
 
 // allows usage of new JS features
 require('babel-polyfill')
