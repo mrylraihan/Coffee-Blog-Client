@@ -68,10 +68,28 @@
       </section>
 
         <!-- create a section for your user feedback -->
+        <!-- cafes section -->
+        <section>
+          <h2>Get All Cafes!</h2>
+          <button id="cafes-index">Get All Cafes</button>
+          <hr>
+
+          <h2>Get One Cafe by Id</h2>
+          <form id="cafes-show" action="">
+            <input type="text" name="cafe[id]" placeholder="Enter cafe Id">
+            <!-- this button will submit the form, since it is inside a form it has teh submit by default, which mean s if the button is clicked the form is submitted -->
+            <button>Get Single Cafe!</button>
+          </form>
+          <hr>
+
+
+
+        </section>
+
       <section>
         <div id="error-message"></div>
 
-        <div id="movies-display"></div>
+        <div id="cafes-display"></div>
       </section>
     </body>
 </html>
