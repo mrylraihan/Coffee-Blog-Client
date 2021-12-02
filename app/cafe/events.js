@@ -30,6 +30,16 @@ const onCreateCafe = event => {
     .catch(ui.onError)
 }
 
+const onUpdateCafe = (event) => {
+  event.preventDefault()
+  console.log('On Update cafe ran!')
+  const data = getFormFields(event.target)
+  const id = data.cafe.id
+  api.update(id, data)
+    .then(ui.onUpdateCafeSuccess)
+    .catch(ui.onError)
+}
+
 const onDestroyCafe = event => {
   event.preventDefault()
   console.log('On Delete Worked')
@@ -60,5 +70,6 @@ module.exports = {
   onCreateCafe,
   onDestroyCafe,
   onDynamicDestroyCafe,
-  onDynamicUpdateCafe
+  onDynamicUpdateCafe,
+  onUpdateCafe
 }

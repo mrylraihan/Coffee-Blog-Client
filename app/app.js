@@ -5,6 +5,7 @@
 // require('./example')
 const authEvents = require('./auth/events')
 const cafeEvents = require('./cafe/events')
+const cafeUi = require('./cafe/ui')
 $(() => {
   // your JS code goes here
   authEvents.addHandlers()
@@ -12,6 +13,9 @@ $(() => {
   $('#cafes-index').on('click', cafeEvents.onIndexCafes)
   $('#cafes-show').on('submit', cafeEvents.onShowCafe)
   $('#cafes-create').on('submit', cafeEvents.onCreateCafe)
+  $('#updateCBtn').on('click', cafeUi.showUpdateCafe)
+
+  $('#cafes-update').on('submit', cafeEvents.onUpdateCafe)
   $('#delete-cafe').on('submit', cafeEvents.onDestroyCafe)
   $('#cafes-display').on(
     'click',

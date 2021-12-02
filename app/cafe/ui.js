@@ -14,6 +14,11 @@ const onCreateCafeSuccess = responseData => {
   $('#cafes-display').html(cafeHtml)
   $('form').trigger('reset')
 }
+
+const showUpdateCafe = () => {
+  $('#cafes-update').show()
+}
+
 const onUpdateCafeSuccess = () => {
   $('#cafes-display').text('Cafe was Updated, click get all to see')
   $('#cafes-display').addClass('text-success')
@@ -103,5 +108,6 @@ module.exports = {
   onShowCafeSuccess,
   onDeleteCafeSuccess,
   onUpdateCafeSuccess,
+  showUpdateCafe,
   onError
 }

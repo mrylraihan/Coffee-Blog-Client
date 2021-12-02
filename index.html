@@ -13,12 +13,12 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <div class="container">
-        <h1><i class="fas fa-coffee"></i>The Koffee Blog</h1>
-      </div>
-      
-       <section id="before-sign-in">
 
+      <section id="before-sign-in">
+
+        <div class="container">
+          <h1><i class="fas fa-coffee"></i>The Koffee Blog</h1>
+        </div>
 
         <div id="card">
             <div id="card-content">
@@ -104,6 +104,17 @@
               <button>Create Cafe</button>
             </form>
             <hr>
+
+            <!-- Update One -->
+            <button id="updateCBtn">Update a Cafe</button>
+            <h2>Update One Cafe</h2>
+             <form id="cafes-update" action="">
+              <input type="text" name="cafe[name]" placeholder="Enter Cafe Name">
+              <input type="text" name="cafe[address]" placeholder="Enter Address">
+              <input type="text" name="cafe[hours]" placeholder="Enter Cafe hours">
+              <input type="text" name="cafe[id]" placeholder="Enter Id">
+              <button>Update Cafe</button>
+            </form>
             
             <h2>Delete Cafe</h2>
             <form id="delete-cafe" action="">
