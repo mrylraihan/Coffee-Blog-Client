@@ -70,6 +70,24 @@
         <!-- create a section for your user feedback -->
         <!-- cafes section -->
         <section>
+            <h2>Create One Cafe</h2>
+          <form id="cafes-create" action="">
+            <input type="text" name="cafe[name]" placeholder="Enter Cafe Name">
+            <input type="text" name="cafe[address]" placeholder="Enter Address">
+            <input type="text" name="cafe[hours]" placeholder="Enter hours">
+            <button>Create Cafe</button>
+          </form>
+          <hr>
+
+          <h2>Delete Book</h2>
+          <form id="delete-cafe" action="">
+            <input type="text" name="cafe[id]" placeholder="Enter Cafe Id">
+            <!-- this button will submit the form, since it is inside a form it has teh submit by default, which mean s if the button is clicked the form is submitted -->
+            <button>Delete Book</button>
+          </form>
+          <hr>
+
+
           <h2>Get All Cafes!</h2>
           <button id="cafes-index">Get All Cafes</button>
           <hr>
@@ -77,10 +95,10 @@
           <h2>Get One Cafe by Id</h2>
           <form id="cafes-show" action="">
             <input type="text" name="cafe[id]" placeholder="Enter cafe Id">
-            <!-- this button will submit the form, since it is inside a form it has teh submit by default, which mean s if the button is clicked the form is submitted -->
             <button>Get Single Cafe!</button>
           </form>
           <hr>
+
 
 
 

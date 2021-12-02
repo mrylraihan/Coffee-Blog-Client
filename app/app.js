@@ -11,4 +11,16 @@ $(() => {
 
   $('#cafes-index').on('click', cafeEvents.onIndexCafes)
   $('#cafes-show').on('submit', cafeEvents.onShowCafe)
+  $('#cafes-create').on('submit', cafeEvents.onCreateCafe)
+  $('#delete-cafe').on('submit', cafeEvents.onDestroyCafe)
+  $('#cafes-display').on(
+    'click',
+    '.cafes-destroy-dynamic',
+    cafeEvents.onDynamicDestroyCafe
+  )
+  $('#cafes-display').on(
+    'submit',
+    '.cafes-update-dynamic',
+    cafeEvents.onDynamicUpdateCafe
+  )
 })
