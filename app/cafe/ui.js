@@ -40,10 +40,10 @@ const onIndexCafesSuccess = responseData => {
   const cafes = responseData.cafes
   console.log(responseData)
   let cafeHtml = ''
-
   cafes.forEach(cafe => {
     cafeHtml += `
-        <div>
+        <div class="col-lg-4 col-sm-6">
+        <div class="cafesCardDisplays">
         <h4>Name: ${cafe.name}<h4/>
         <p>Address: ${cafe.address}</p>
         <p>Hours: ${cafe.hours}</p>
@@ -56,11 +56,13 @@ const onIndexCafesSuccess = responseData => {
             <button>Update Cafe</button>
           </form>
           <hr>
+          </div>
         </div>
       `
   })
 
   $('#cafes-display').html(cafeHtml)
+  // $('#cafes-display').toggle()
 }
 
 const onShowCafeSuccess = function (responseData) {

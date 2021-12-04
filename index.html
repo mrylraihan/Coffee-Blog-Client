@@ -76,6 +76,51 @@
       <section id="after-sign-in">
 
 <!-- Navbar start -->
+ <nav class="navbar navbar-collapse-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand"><i class="fas fa-coffee"></i>  The Koffee Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page">Home</a>
+        </li>
+    
+        <li class="nav-item dropdown">
+           <!-- <form id="change-password"> -->
+          <!-- fieldset is used to group multiple inputs together -->
+    
+			<!-- change password and sign out forms  -->
+			<form id="change-password" class="border">
+				<fieldset>
+					<legend>Change Password</legend>
+					<label for="old">Old Password:</label>
+					<input type="password" name="passwords[old]" id="old" placeholder="Enter Old Password" required/>
+					<label for="new">New Password:</label>
+					<input
+						type="password"
+						name="passwords[new]"
+						id="new"
+						placeholder="Enter New Password"
+						required/>
+					<button class="btn btn-primary">Change</button>
+				</fieldset>
+			</form>
+
+			<form id="sign-out" class="border">
+				<fieldset>
+					<legend>Sign Out</legend>
+					<button class="btn btn-primary">Sign Out</button>
+				</fieldset>
+			</form>
+				</li>
+			</ul>
+		</div>
+		</div>
+		</nav>
+
 <!-- Navbar end -->
 
 <div class="container">
@@ -87,7 +132,7 @@
 		</div>
 
         <!-- change password and sign out forms  -->
-        <form id="change-password" class="border">
+        <!-- <form id="change-password" class="border">
           <fieldset>
             <legend>Change Password</legend>
             <label for="old">Old Password:</label>
@@ -103,7 +148,7 @@
             <legend>Sign Out</legend>
             <button class="btn btn-primary">Sign Out</button>
           </fieldset>
-          </form>
+          </form> -->
           
           <!-- create a section for your user feedback -->
           <!-- cafes section -->
@@ -203,7 +248,9 @@
             
           </section>
           <section>
-            <div id="cafes-display"></div>
+            <div class="container">
+              <div id="cafes-display" class="row"></div>
+            </div>
           </section>
         </section>
           

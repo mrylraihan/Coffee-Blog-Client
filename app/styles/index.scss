@@ -50,9 +50,13 @@ label {
   font-family: "Raleway", sans-serif;
   font-size: 11pt;
 }
+.cafesCardDisplays{
+  background: rgba(255, 255, 255, 0.5)
+}
+
 
 #card {
-  background: #fbfbfb;
+  background: white;
   border-radius: 8px;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
   height: 620px;
@@ -69,6 +73,14 @@ label {
   padding-top: 13px;
   text-align: center;
 }
+
+#cafes-display{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
 
 .submit-btn {
   background: -webkit-linear-gradient(right, #9e9483, #0a0500);
@@ -128,11 +140,11 @@ h3 {
 
 
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: rgba($color: #858383, $alpha: 1.0);
+  background-color: rgba(230, 225, 225, 0.95);
   display :flex-start
 }
 .jumbotron h1,
@@ -182,4 +194,12 @@ h3 {
   height: 450px;
   margin: 6rem auto 8.1rem auto;
   width: 329px;
+}
+
+.row{
+    margin-right: -15px;
+  margin-left: -15px;
+    display: table;
+  content: " ";
+
 }
