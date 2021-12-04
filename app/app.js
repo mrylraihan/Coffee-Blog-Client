@@ -14,6 +14,7 @@ $(() => {
   $('#cafes-show').on('submit', cafeEvents.onShowCafe)
   $('#cafes-create').on('submit', cafeEvents.onCreateCafe)
   $('#updateCBtn').on('click', cafeUi.showUpdateCafe)
+  $('#createCBtn').on('click', cafeUi.showCreateCafe)
 
   $('#cafes-update').on('submit', cafeEvents.onUpdateCafe)
   $('#delete-cafe').on('submit', cafeEvents.onDestroyCafe)

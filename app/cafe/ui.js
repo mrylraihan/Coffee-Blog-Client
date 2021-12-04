@@ -16,7 +16,10 @@ const onCreateCafeSuccess = responseData => {
 }
 
 const showUpdateCafe = () => {
-  $('#card-update').show()
+  $('#card-update').toggle()
+}
+const showCreateCafe = () => {
+  $('#card-create').toggle()
 }
 
 const onUpdateCafeSuccess = () => {
@@ -109,5 +112,6 @@ module.exports = {
   onDeleteCafeSuccess,
   onUpdateCafeSuccess,
   showUpdateCafe,
+  showCreateCafe,
   onError
 }
