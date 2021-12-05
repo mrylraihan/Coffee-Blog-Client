@@ -83,7 +83,7 @@ const onShowCafeSuccess = function (responseData) {
 }
 
 const onDeleteCafeSuccess = function () {
-  $('#cafes-display').text('Book was Deleted')
+  $('#cafes-display').text('Cafe was Deleted')
   $('#cafes-display').addClass('text-success')
   setTimeout(() => {
     $('#cafes-display').html('')
