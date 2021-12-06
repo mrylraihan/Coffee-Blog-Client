@@ -38,38 +38,41 @@ const onUpdateCafeSuccess = () => {
 
 const onIndexCafesSuccess = responseData => {
   const cafes = responseData.cafes
-  console.log(responseData)
-  let cafeHtml = ''
-  cafes.forEach(cafe => {
-    cafeHtml += `
+  if ($('#cafes-display').html() === '') {
+    console.log(responseData)
+    let cafeHtml = ''
+    cafes.forEach((cafe) => {
+      cafeHtml += `
         <div class="col-lg-4 col-sm-6">
-        <div class="cafesCardDisplays">
+        <div class="cardsforActions">
         <h4>Name: ${cafe.name}<h4/>
         <p>Address: ${cafe.address}</p>
         <p>Hours: ${cafe.hours}</p>
         <p>ID: ${cafe._id}</p>
         <button class="cafes-destroy-dynamic" data-id=${cafe._id} id=${cafe._id}>Delete Me!</button>
          <form class="cafes-update-dynamic" data-id=${cafe._id} action="">
-            <input type="text" name="cafe[name]" placeholder="Enter New cafe Name">
-            <input type="text" name="cafe[address]" placeholder="Enter New Author">
-            <input type="text" name="cafe[hours]" placeholder="Enter New Hours">
+            <input type="text" name="cafe[name]" class="form-content-main" placeholder="Enter New cafe Name">
+            <input type="text" name="cafe[address]" class="form-content-main" placeholder="Enter New Author">
+            <input type="text" name="cafe[hours]" class="form-content-main" placeholder="Enter New Hours">
             <button>Update Cafe</button>
           </form>
           <hr>
           </div>
         </div>
       `
-  })
+    })
 
-  $('#cafes-display').html(cafeHtml)
-  // $('#cafes-display').toggle()
+    $('#cafes-display').html(cafeHtml)
+  } else {
+    $('#cafes-display').toggle()
+  }
 }
 
 const onShowCafeSuccess = function (responseData) {
   const cafe = responseData.cafe
   console.log(cafe)
   const cafeHtml = `
-  <div>
+  <div class="cardsforActions">
         <h4>Name: ${cafe.name}<h4/>
         <p>Address: ${cafe.address}</p>
         <p>Hours: ${cafe.hours}</p>

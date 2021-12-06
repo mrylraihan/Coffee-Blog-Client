@@ -203,3 +203,82 @@ h3 {
   content: " ";
 
 }
+
+
+
+.custom-btn {
+  background: -webkit-linear-gradient(right, #9e9483, #0a0500);
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #80775a;
+  cursor: pointer;
+  color: white;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 42.3px;
+  margin: 0 ;
+  display: block;
+    margin-top: 10px;
+  transition: 0.25s;
+  width: 153px;
+}
+.custom-btn:hover {
+  box-shadow: 0px 1px 18px #532c0c;
+}
+
+
+
+
+.cardsforActions {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: rgba(230, 225, 225, 0.95);
+  display :flex-start
+}
+.cardsforActions h1,
+.cardsforActions .h1 {
+  color: inherit;
+}
+.cardsforActions > button {
+  display: inline-block;
+}
+.cardsforActions p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.cardsforActions > hr {
+  border-top-color: #d5d5d5;
+}
+.container .cardsforActions,
+.container-fluid .cardsforActions {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+.cardsforActions .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .cardsforActions {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .cardsforActions,
+  .container-fluid .cardsforActions {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .cardsforActions h1,
+  .cardsforActions .h1 {
+    font-size: 63px;
+  }
+}
+
+.form-content-main {
+  background: rgba(230, 225, 225, 0.95);
+  border: none;
+  outline: none;
+  padding-top: 12px;
+}

@@ -93,26 +93,27 @@
           <!-- fieldset is used to group multiple inputs together -->
     
 			<!-- change password and sign out forms  -->
-			<form id="change-password" class="border">
+			<form id="change-password" class="form">
 				<fieldset>
 					<legend>Change Password</legend>
 					<label for="old">Old Password:</label>
-					<input type="password" name="passwords[old]" id="old" placeholder="Enter Old Password" required/>
+					<input type="password" class="form-content" name="passwords[old]" id="old" placeholder="Enter Old Password" required/>
 					<label for="new">New Password:</label>
 					<input
 						type="password"
 						name="passwords[new]"
 						id="new"
+            class="form-content"
 						placeholder="Enter New Password"
 						required/>
-					<button class="btn btn-primary">Change</button>
+					<button class="custom-btn">Change</button>
 				</fieldset>
 			</form>
 
-			<form id="sign-out" class="border">
+			<form id="sign-out" class="form">
 				<fieldset>
 					<legend>Sign Out</legend>
-					<button class="btn btn-primary">Sign Out</button>
+					<button class="custom-btn">Sign Out</button>
 				</fieldset>
 			</form>
 				</li>
@@ -222,26 +223,29 @@
             <!-- test end  -->
 
 
+            <div class="cardsforActions">
+              <h2>Delete Cafe</h2>
+              <form id="delete-cafe" action="">
+                <input type="text" name="cafe[id]" class="form-content-main" placeholder="Enter Cafe Id">
+                <!-- this button will submit the form, since it is inside a form it has teh submit by default, which mean s if the button is clicked the form is submitted -->
+                <button class="custom-btn">Delete Book</button>
+              </form>
+              <hr>
+            </div>
             
-            <h2>Delete Cafe</h2>
-            <form id="delete-cafe" action="">
-              <input type="text" name="cafe[id]" placeholder="Enter Cafe Id">
-              <!-- this button will submit the form, since it is inside a form it has teh submit by default, which mean s if the button is clicked the form is submitted -->
-              <button>Delete Book</button>
-            </form>
-            <hr>
-            
-            
-            <h2>Get All Cafes!</h2>
-            <button id="cafes-index">Get All Cafes</button>
-            <hr>
-            
-            <h2>Get One Cafe by Id</h2>
-            <form id="cafes-show" action="">
-              <input type="text" name="cafe[id]" placeholder="Enter cafe Id">
-              <button>Get Single Cafe!</button>
-            </form>
-            <hr>
+            <div class="cardsforActions">
+              <h2>Get All Cafes!</h2>
+              <button class="custom-btn" id="cafes-index">Get All Cafes</button>
+              <hr>
+            </div>
+            <div class="cardsforActions">
+              <h2 class="form">Get One Cafe by Id</h2>
+              <form id="cafes-show" action="">
+                <input type="text" class="form-content-main" name="cafe[id]" placeholder="Enter cafe Id">
+                <button class="custom-btn">Get Single Cafe!</button>
+              </form>
+              <hr>
+            </div>
             
             
             
