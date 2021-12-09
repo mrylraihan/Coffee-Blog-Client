@@ -1,0 +1,31 @@
+// use require with a reference to bundle the file and use it in this file
+// const example = require('./example')
+
+// use require without a reference to ensure a file is bundled
+// require('./example')
+const authEvents = require('./auth/events')
+const cafeEvents = require('./cafe/events')
+const cafeUi = require('./cafe/ui')
+$(() => {
+  // your JS code goes here
+  authEvents.addHandlers()
+
+  $('#cafes-index').on('click', cafeEvents.onIndexCafes)
+  $('#cafes-show').on('submit', cafeEvents.onShowCafe)
+  $('#cafes-create').on('submit', cafeEvents.onCreateCafe)
+  $('#updateCBtn').on('click', cafeUi.showUpdateCafe)
+  $('#createCBtn').on('click', cafeUi.showCreateCafe)
+
+  $('#cafes-update').on('submit', cafeEvents.onUpdateCafe)
+  $('#delete-cafe').on('submit', cafeEvents.onDestroyCafe)
+  $('#cafes-display').on(
+    'click',
+    '.cafes-destroy-dynamic',
+    cafeEvents.onDynamicDestroyCafe
+  )
+  $('#cafes-display').on(
+    'submit',
+    '.cafes-update-dynamic',
+    cafeEvents.onDynamicUpdateCafe
+  )
+})

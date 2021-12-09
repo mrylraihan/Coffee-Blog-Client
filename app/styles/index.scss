@@ -1,0 +1,284 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/css/all';
+@import '~@fortawesome/fontawesome-free/css/solid';
+
+body{
+	background: url(https://images.unsplash.com/photo-1541870730196-cd1efcbf5649?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80); 
+    // background: -webkit-linear-gradient(bottom, #651104, #8d897b);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: center;
+	font-family: 'Lato', sans-serif;
+
+}
+.container{
+  margin-top: 100px;
+}
+h1{
+    justify-content: center;
+    align-items:center ;
+    display: flex;
+    align-content: center;
+    margin-top: 50px;
+}
+
+#after-sign-in{
+  display: none;
+}
+
+#card-update{
+  display: none;
+}
+#card-create{
+  display: none;
+}
+
+
+#card-update{
+  background: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 620px;
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+}
+
+/* // new stuff for signin */
+
+label {
+  font-family: "Raleway", sans-serif;
+  font-size: 11pt;
+}
+.cafesCardDisplays{
+  background: rgba(255, 255, 255, 0.5)
+}
+
+
+#card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 620px;
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+}
+.card-content {
+  padding: 12px 44px;
+}
+.card-title {
+  font-family: "Raleway Thin", sans-serif;
+  letter-spacing: 4px;
+  padding-bottom: 23px;
+  padding-top: 13px;
+  text-align: center;
+}
+
+#cafes-display{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+
+.submit-btn {
+  background: -webkit-linear-gradient(right, #9e9483, #0a0500);
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #80775a;
+  cursor: pointer;
+  color: white;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 42.3px;
+  margin: 0 auto;
+  display: block;
+    margin-top: 10px;
+  transition: 0.25s;
+  width: 153px;
+}
+#submit-btn:hover {
+  box-shadow: 0px 1px 18px #532c0c;
+}
+.form {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+.form-border {
+  background: -webkit-linear-gradient(right, #643b20, #837d79);
+  height: 1px;
+  width: 100%;
+}
+.form-content {
+  background: #fbfbfb;
+  border: none;
+  outline: none;
+  padding-top: 12px;
+}
+.underline-title {
+  background: -webkit-linear-gradient(right, #643b20, #98a09b);
+  height: 2px;
+  margin: -1.1rem auto 0 auto;
+  width: 230px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.fa-coffee{
+	color:#3d2905;
+}
+
+
+
+.jumbotron {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: rgba(230, 225, 225, 0.95);
+  display :flex-start
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  color: inherit;
+}
+.jumbotron > button {
+  display: inline-block;
+}
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.jumbotron > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 63px;
+  }
+}
+
+#card-create {
+  background: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 450px;
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+}
+
+.row{
+    margin-right: -15px;
+  margin-left: -15px;
+    display: table;
+  content: " ";
+
+}
+
+
+
+.custom-btn {
+  background: -webkit-linear-gradient(right, #9e9483, #0a0500);
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #80775a;
+  cursor: pointer;
+  color: white;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 42.3px;
+  margin: 0 ;
+  display: block;
+    margin-top: 10px;
+  transition: 0.25s;
+  width: 153px;
+}
+.custom-btn:hover {
+  box-shadow: 0px 1px 18px #532c0c;
+}
+
+
+
+
+.cardsforActions {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: rgba(230, 225, 225, 0.95);
+  display :flex-start
+}
+.cardsforActions h1,
+.cardsforActions .h1 {
+  color: inherit;
+}
+.cardsforActions > button {
+  display: inline-block;
+}
+.cardsforActions p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.cardsforActions > hr {
+  border-top-color: #d5d5d5;
+}
+.container .cardsforActions,
+.container-fluid .cardsforActions {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+.cardsforActions .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .cardsforActions {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .cardsforActions,
+  .container-fluid .cardsforActions {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .cardsforActions h1,
+  .cardsforActions .h1 {
+    font-size: 63px;
+  }
+}
+
+.form-content-main {
+  background: rgba(230, 225, 225, 0.95);
+  border: none;
+  outline: none;
+  padding-top: 12px;
+}
